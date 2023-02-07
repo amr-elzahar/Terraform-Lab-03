@@ -1,4 +1,4 @@
 variable "tag" {
-  type = string
+  type        = string
   description = "Elastic IP tag"
 }

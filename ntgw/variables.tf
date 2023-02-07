@@ -1,13 +1,13 @@
 variable "subnet_id" {
-  type = string
+  type        = string
   description = "Private subnet ID"
 }
 variable "eip_id" {
-  type = string
+  type        = string
   description = "Elastic IP ID"
 }
 
 variable "tag" {
-  type = string
+  type        = string
   description = "NAT gateway tag"
 }

@@ -2,13 +2,13 @@ resource "aws_lb" "load-balancer" {
   name               = var.lb-name
   load_balancer_type = var.lb_type
   internal           = var.scheme
-  security_groups = [var.lb_sg_id]
+  security_groups    = [var.lb_sg_id]
   subnets            = [var.subnet-1_id, var.subnet-2_id]
 
   enable_deletion_protection = false
 
   tags = {
-   "Name" = var.lb-name
+    "Name" = var.lb-name
   }
 }
 
@@ -30,7 +30,7 @@ resource "aws_lb_target_group" "lb-target-group" {
   vpc_id   = var.vpc_id
 
   tags = {
-   "Name" = var.tg-name
+    "Name" = var.tg-name
   }
 }
 

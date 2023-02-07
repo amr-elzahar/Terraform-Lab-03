@@ -7,12 +7,12 @@ resource "aws_route_table" "private-route-table" {
   }
 
   tags = {
-   "Name" = var.tag
+    "Name" = var.tag
   }
 }
 
 resource "aws_route_table_association" "private-rtb-association-1" {
-  subnet_id = var.subnet_id
+  subnet_id      = var.subnet_id
   route_table_id = aws_route_table.private-route-table.id
 }
 

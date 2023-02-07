@@ -21,12 +21,12 @@ resource "aws_instance" "ec2" {
   associate_public_ip_address = true
   vpc_security_group_ids      = [var.private_sg]
   subnet_id                   = var.subnet_id
-  key_name = "Test"
+  key_name                    = "Test"
 
   connection {
-    type     = "ssh"
-    user     = "ubuntu"
-    host     = self.public_ip
+    type        = "ssh"
+    user        = "ubuntu"
+    host        = self.public_ip
     private_key = file("./Test.pem")
   }
 

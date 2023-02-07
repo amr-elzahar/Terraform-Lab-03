@@ -1,19 +1,19 @@
 variable "type" {
-   type = string
-   description = "Instance type"
+  type        = string
+  description = "Instance type"
 }
 
 variable "vpc_id" {
-   type = string
-   description = "VPC ID"
+  type        = string
+  description = "VPC ID"
 }
 
 variable "subnet_id" {
-   type = string
-   description = "Public subnet ID"
+  type        = string
+  description = "Public subnet ID"
 }
 
 variable "public_sg" {
-  type = string
+  type        = string
   description = "Public security group"
 }

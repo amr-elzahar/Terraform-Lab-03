@@ -1,9 +1,9 @@
 variable "vpc_id" {
-  type = string
+  type        = string
   description = "VPC ID"
 }
 
 variable "tag" {
-  type = string
+  type        = string
   description = "Internet gateway tag"
 }
